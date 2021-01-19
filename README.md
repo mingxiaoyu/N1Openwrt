@@ -1,6 +1,6 @@
-![N1](https://github.com/mingxiaoyu/N1Openwrt/workflows/N1/badge.svg)
+![N1](https://github.com/bnqzzdf/N1Openwrt/workflows/N1/badge.svg)
 
-自用 Phicomm N1 Openwrt，默认旁路油
+自用 Phicomm N1 Openwrt，默认主路由
 
 默认自定义防火墙: iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE
 
@@ -30,6 +30,7 @@
 ------
  # 感激 
  [P3TERX](https://github.com/P3TERX/Actions-OpenWrt)提供的脚本参考
+ [mingxiaoyu/N1Openwrt](https://github.com/mingxiaoyu/N1Openwrt)
  
  ## 云编译的规格
 https://docs.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners#supported-runners-and-hardware-resources
