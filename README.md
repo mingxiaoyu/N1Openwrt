@@ -1,6 +1,8 @@
 ![N1](https://github.com/bnqzzdf/N1Openwrt/workflows/N1/badge.svg)
 
-自用 Phicomm N1 Openwrt，默认主路由
+自用 Phicomm N1 Openwrt，默认主路由  
+使用VLAN接入网络，LAN设置VLAN为11，WAN的VLAN为101，请自行修改相关配置以符合您的需求。
+
 
 ## 用户名和密码
  * User: root
