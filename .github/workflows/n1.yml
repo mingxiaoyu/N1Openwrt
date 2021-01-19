@@ -28,7 +28,7 @@ env:
   DIY_SH: diy.sh
   UPLOAD_COWTRANSFER: true
   TZ: Asia/Shanghai
-  RELEASE: true
+  RELEASE: false
   DELETE_IPK: true
   TELECOM_USER: ${{ secrets.TELECOM_USER }}
   TELECOM_PASSWORD: ${{ secrets.TELECOM_PASSWORD }}
@@ -163,7 +163,7 @@ jobs:
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 3
+        keep_latest: 2
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASES_TOKEN }}
