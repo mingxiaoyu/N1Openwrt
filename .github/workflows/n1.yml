@@ -59,14 +59,17 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt     
+
     - name: Update Feeds
       run: |
         cd openwrt
         ./scripts/feeds update -a
+
     - name: Install Feeds
       run: |
         cd openwrt
         ./scripts/feeds install -a
+
     - name: Load Custom Configuration
       run: |
         [ -e files ] && mv files openwrt/files
@@ -75,7 +78,6 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_SH
         
-
     - name: Download Package
       id: package
       run: |
@@ -97,6 +99,7 @@ jobs:
         make package/compile -j$(nproc) IGNORE_ERRORS=1 || make package/compile -j1 V=s IGNORE_ERRORS=1
         make package/index
         echo "::set-output name=status::success"
+
     - name: Generate Firmware
       if: steps.compile.outputs.status == 'success'
       id: generate
