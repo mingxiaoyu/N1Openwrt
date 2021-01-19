@@ -15,17 +15,8 @@ config interface 'lan'
 	option ipaddr '192.168.0.1'
 	option netmask '255.255.255.0'
 	option ip6assign '60'
-	option macaddr 'FC:7C:02:89:30:CF'
 
 config interface 'wan'
 	option ifname 'eth0.101'
-	option proto 'pppoe'
-	option username 'TELECOM_USER' 
-	option password 'TELECOM_PASSWORD' 
-	option ipv6 'auto'
-
-config interface 'iptv'
-	option ifname 'eth0.45'
 	option proto 'dhcp'
-	option macaddr 'FC:01:23:45:67:89'
-
+	option ipv6 'auto'
