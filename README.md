@@ -2,13 +2,10 @@
 
 自用 Phicomm N1 Openwrt，默认主路由
 
-默认自定义防火墙: iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE
-
-
 ## 用户名和密码
  * User: root
  * Password: password
- * Default IP: 192.168.32.2
+ * Default IP: 192.168.0.1
 
 
 ## app list:
