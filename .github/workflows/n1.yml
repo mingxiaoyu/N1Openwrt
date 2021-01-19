@@ -28,7 +28,7 @@ env:
   DIY_SH: diy.sh
   UPLOAD_COWTRANSFER: true
   TZ: Asia/Shanghai
-  RELEASE: false
+  RELEASE: true
   DELETE_IPK: true
 
 jobs:
