@@ -26,8 +26,8 @@
  
 ------
  # 感激 
- [P3TERX](https://github.com/P3TERX/Actions-OpenWrt)提供的脚本参考
- [mingxiaoyu/N1Openwrt](https://github.com/mingxiaoyu/N1Openwrt)
+ [P3TERX](https://github.com/P3TERX/Actions-OpenWrt)提供的脚本参考  
+ [mingxiaoyu/N1Openwrt](https://github.com/mingxiaoyu/N1Openwrt) 
  
  ## 云编译的规格
 https://docs.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners#supported-runners-and-hardware-resources
